@@ -1,12 +1,12 @@
 import React from 'react';
-import { Button } from 'antd';
+import Results from './screens/results'
 import './App.scss';
 
 const App = () => (
   <div className="App">
     Supersearch Application
     <br/>
-    <Button type="primary">Example Button</Button>
+    <Results />
   </div>
 );
 
