@@ -11,7 +11,7 @@ class Results extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://cors-anywhere.herokuapp.com/' + 'http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/all.json')
+    fetch('https://cors-anywhere.herokuapp.com/http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/all.json')
       .then(res => res.json())
       .then(
         (result) => {
@@ -34,7 +34,6 @@ class Results extends React.Component {
 
   render() {
     const { error, isLoaded, heros } = this.state;
-    console.log(heros)
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
